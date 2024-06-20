@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+
+.doctor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.doctor-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 3px 3px 7px grey;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.doctor-name {
+    font-size: 24px;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.specialty, .contact {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact {
+    color: #666;
+}
