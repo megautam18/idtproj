@@ -1,0 +1,68 @@
+*{
+    background-color: bisque;
+}
+
+.header {
+    text-align: center;
+    font-family:'Verdana', Geneva, Tahoma, sans-serif;
+    font-size: 82px;
+
+}
+
+.ddetails, .faq, .emergency{
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.ddetails{
+    margin-right: 70px;
+    color: green;     
+    font-size: 62px;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+
+
+}
+
+.faq{
+    display: inline-block;
+    font-size: 62px;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    margin-right: 380px;
+    color: green;
+}
+
+.emergency{
+    display: inline-block;
+    font-size:62px;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    margin-right: 130px;
+    color: red;
+}
+
+.b1{
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.b1 p{
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: burlywood;
+    overflow-wrap: break-word;
+    border-radius: 12px;
+    box-shadow: 3px 3px 7px grey;
+    color: white;
+    padding: 10px;
+    font-size: 47px;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    margin-bottom: 100px;
+
+}
+
+.hla{
+    background-color: burlywood;
+    color: white;
+}
