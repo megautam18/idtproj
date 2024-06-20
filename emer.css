@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.sos-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.sos-button:hover {
+    background-color: darkred;
+}
+
+.facilities {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.facilities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.facilities li {
+    margin: 10px 0;
+}
