@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOS Emergency Button</title>
-    <link rel="stylesheet" href="emer.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <header>
             <h1>Emergency Assistance</h1>
-        </div>
-        <button id="sosButton" class="sos-button">SOS</button>
-        <div id="facilities" class="facilities">
-            <h2>Healthcare Facilities Nearby</h2>
-            <ul>
-                <li><strong>City Hospital</strong>: 123 Main St - <a href="tel:1234567890">Call Now</a></li>
-                <li><strong>Oak Medical Center</strong>: 456 Oak Ave - <a href="tel:0987654321">Call Now</a></li>
-                <li><strong>Pine Health Clinic</strong>: 789 Pine Rd - <a href="tel:1122334455">Call Now</a></li>
-            </ul>
-        </div>
+        </header>
+        <main>
+            <button id="sosButton" class="sos-button">SOS</button>
+            <div id="facilities" class="facilities">
+                <h2>Healthcare Facilities Nearby</h2>
+                <ul id="facilitiesList"></ul>
+            </div>
+        </main>
     </div>
-    <script src="emer.js"></script>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
 </body>
 </html>
 
