@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+
     font-family: 'Roboto', sans-serif;
+
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #74ebd5, #acb6e5);
     display: flex;
     justify-content: center;
@@ -22,6 +25,13 @@ body {
 }
 
 header h1 {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
     margin: 0;
     padding-bottom: 20px;
     color: #444;
@@ -73,6 +83,19 @@ header h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+
+.facilities li a {
+    text-decoration: none;
+    color: #ff5f6d;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.facilities li a:hover {
+    color: #ffc371;
+ a
 }
 
 .facilities li strong {
