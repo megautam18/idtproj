@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
+
+    font-family: 'Roboto', sans-serif;
+
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #74ebd5, #acb6e5);
     display: flex;
@@ -11,6 +16,15 @@ body {
 
 .container {
     text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+header h1 {
     background: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 15px;
@@ -66,6 +80,10 @@ body {
 .facilities li {
     margin: 15px 0;
     font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .facilities li a {
@@ -77,4 +95,23 @@ body {
 
 .facilities li a:hover {
     color: #ffc371;
+ a
 }
+
+.facilities li strong {
+    color: #333;
+}
+
+.facilities li .call-button {
+    text-decoration: none;
+    color: white;
+    background-color: #ff5f6d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.facilities li .call-button:hover {
+    background-color: #ffc371;
+}
+
