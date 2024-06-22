@@ -1,40 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #333;
 }
 
 .container {
     text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    padding-bottom: 20px;
+    color: #444;
+    font-size: 2em;
 }
 
 .sos-button {
-    background-color: red;
+    background-color: #ff5f6d;
+    background-image: linear-gradient(315deg, #ff5f6d 0%, #ffc371 74%);
     color: white;
     border: none;
-    padding: 20px 40px;
-    font-size: 24px;
+    padding: 20px 60px;
+    font-size: 2em;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .sos-button:hover {
-    background-color: darkred;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .facilities {
     display: none; /* Initially hidden */
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: left;
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.facilities h2 {
+    margin-top: 0;
+    color: #555;
 }
 
 .facilities ul {
@@ -43,5 +64,17 @@ body {
 }
 
 .facilities li {
-    margin: 10px 0;
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+.facilities li a {
+    text-decoration: none;
+    color: #ff5f6d;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.facilities li a:hover {
+    color: #ffc371;
 }
