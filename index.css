@@ -1,0 +1,69 @@
+* {
+    background-color: bisque;
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+.header {
+    text-align: center;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-size: 72px; /* Slightly reduced for better readability */
+    color: #333; /* Darker color for better contrast */
+    margin: 20px 0; /* Add some spacing */
+}
+
+.ddetails, .faq, .emergency {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px; /* Add some spacing at the bottom */
+}
+
+.ddetails {
+    margin-right: 50px; /* Reduced margin for better layout */
+    color: #2e8b57; /* Slightly darker green for better contrast */
+    font-size: 60px; /* Slightly reduced size for readability */
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+}
+
+.faq {
+    font-size: 60px; /* Slightly reduced size for readability */
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    margin-right: 350px; /* Reduced margin for better layout */
+    color: #2e8b57; /* Same color as .ddetails for consistency */
+}
+
+.emergency {
+    font-size: 60px; /* Slightly reduced size for readability */
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    color: #ff6347; /* Use a slightly less intense red */
+    margin-right: 110px; /* No margin needed if it's the last item */
+}
+
+.b1 {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    width: calc(33.33% - 20px); /* Adjust width for better layout */
+}
+
+.b1 p {
+    margin: 10px;
+    height: 400px;
+    width: 100%; /* Use full width available */
+    background-color: #deb887; /* Slightly darker burlywood */
+    overflow-wrap: break-word;
+    border-radius: 12px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+    color: white;
+    padding: 20px; /* Increase padding for better spacing */
+    font-size: 40px; /* Slightly reduced size for readability */
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    margin-bottom: 60px; /* Reduced margin for better layout */
+}
+
+.hla {
+    background-color: #deb887; /* Slightly darker burlywood */
+    color: white;
+    padding: 10px; /* Add some padding for better spacing */
+    border-radius: 8px; /* Add border-radius for consistency */
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
