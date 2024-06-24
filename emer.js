@@ -5,6 +5,7 @@ document.getElementById('sosButton').addEventListener('click', function() {
     } else {
         alert('Geolocation is not supported by this browser.');
     }
+    window.location.href = 'tel:100'; 
 });
 
 function showPosition(position) {
