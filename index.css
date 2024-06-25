@@ -1,69 +1,185 @@
 * {
-    background-color: bisque;
-    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+    background-color: #DDD0C8;
+    box-sizing: border-box; 
+}
+
+@font-face {
+    font-family: 'ModerneSans'; 
+    src: url('./Moderne.ttf'); 
+}
+
+@font-face{
+    font-family: 'rubik';
+    src: url('./Rubik.ttf');
 }
 
 .header {
     text-align: center;
-    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-family: 'ModerneSans';
     font-size: 72px; /* Slightly reduced for better readability */
     color: #333; /* Darker color for better contrast */
     margin: 20px 0; /* Add some spacing */
+    text-decoration: underline;
+    text-decoration-color: #333;
+}
+
+.slideshow-header{
+    text-align: center;
+    font-family: 'ModerneSans';
+    font-size: 42px;
+    color: #333;
+    word-spacing: 4px;
+    text-decoration: underline;
+    text-decoration-color: #333;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.item {
+    flex: 1 1 calc(25% - 20px); /* Adjust to 1/3 width minus the margin */
+    margin-bottom: 20px; /* Add some spacing at the bottom */
 }
 
 .ddetails, .faq, .emergency {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 20px; /* Add some spacing at the bottom */
+    
 }
 
 .ddetails {
-    margin-right: 50px; /* Reduced margin for better layout */
-    color: #2e8b57; /* Slightly darker green for better contrast */
+    color: #333; /* Slightly darker green for better contrast */
     font-size: 60px; /* Slightly reduced size for readability */
-    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-family: 'rubik';
+    text-decoration-color: #2e8b57;
 }
 
 .faq {
     font-size: 60px; /* Slightly reduced size for readability */
-    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
-    margin-right: 350px; /* Reduced margin for better layout */
-    color: #2e8b57; /* Same color as .ddetails for consistency */
+    font-family: 'rubik';
+    color: #333; 
+    text-decoration-color: #2e8b57;
 }
 
 .emergency {
     font-size: 60px; /* Slightly reduced size for readability */
-    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
-    color: #ff6347; /* Use a slightly less intense red */
-    margin-right: 110px; /* No margin needed if it's the last item */
+    font-family: 'rubik';
+    color: #333; 
+    text-decoration-color: #d04a32;
 }
 
 .b1 {
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: top;
-    width: calc(33.33% - 20px); /* Adjust width for better layout */
+    background-color: #605f5f; /* Slightly darker burlywood */
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+    color: rgb(0, 0, 0);
+    padding: 20px; /* Increase padding for better spacing */
+    font-size: 40px; /* Slightly reduced size for readability */
+    font-family: 'rubik';
 }
 
 .b1 p {
-    margin: 10px;
-    height: 400px;
-    width: 100%; /* Use full width available */
-    background-color: #deb887; /* Slightly darker burlywood */
+    margin: 0;
+    height: 300px;
     overflow-wrap: break-word;
-    border-radius: 12px;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2); /* Lighter shadow */
-    color: white;
-    padding: 20px; /* Increase padding for better spacing */
-    font-size: 40px; /* Slightly reduced size for readability */
-    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
-    margin-bottom: 60px; /* Reduced margin for better layout */
+    background-color: lightgrey;
 }
 
 .hla {
-    background-color: #deb887; /* Slightly darker burlywood */
-    color: white;
-    padding: 10px; /* Add some padding for better spacing */
-    border-radius: 8px; /* Add border-radius for consistency */
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
+    color: rgb(0, 0, 0);
+    background-color: lightgrey;
 }
+
+.slideshow-container {
+    position: relative;
+    background: lightgrey;
+    border: 1px solid #333;
+    border-radius: 12px;
+  }
+  
+  /* Slides */
+  .mySlides {
+    border-radius: 12px;
+    background-color: lightgrey;
+    display: none;
+    padding: 80px;
+    text-align: center;
+    
+  }
+
+  
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    outline: #333;
+    background-color: #d6bc10;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    margin-top: 7px;
+    padding: 20px;
+    background: #ddd;
+    border-radius: 12px;
+    border: 1px solid #333;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: 1px solid #333;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: white;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {
+    background-color: lightgrey;
+    font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {
+    background-color: lightgrey;
+    color: rgb(7, 12, 20);}  

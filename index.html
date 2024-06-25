@@ -9,15 +9,15 @@
     <h1 class="header">Healthcare technology</h1>
     <div class="container">
         <div class="item">
-            <a class="emergency" href="./emer.html">Emergency!</a>
-            <div class="b1">
-                <p class="p">Emergency contact information and steps to take.</p>
+            <a class="emergency" href="./emer.html">Emergency!</a>          
+                <div class="b1">
+                    <p class="p">Emergency contact information and steps to take.</p>
             </div>
         </div>
         <div class="item">
             <a class="ddetails" href="./dd.html">Doctor details</a>
-            <div class="b1">
-                <p class="p">All the required details of the doctors in your area can be found by clicking the <a href="./dd.html" class="hla">hyperlink.</a>.</p>
+            <div class="b1">    
+                <p class="p">All the required details of the doctors in your area can be found by clicking the <a href="./dd.html" class="hla">hyperlink</a>.</p>
             </div>
         </div>
         <div class="item">
@@ -28,5 +28,51 @@
         </div>
         
     </div>
+    <h2 class="slideshow-header"> What our users had to say after trying our website</h2>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <q>Was able to use this during an emergency, was really helpful.</q>
+            <p class="author">~ Ranjith</p>
+        </div>
+        <div class="mySlides">
+            <q>This website is uniquely designed.</q>
+            <p class="author">~ Paramesh</p>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>
